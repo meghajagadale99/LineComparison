@@ -10,9 +10,9 @@ public class LineComparison
         int y1 = 8;
         int y2 = 89;
         int m1 = 14;
-        int m2 = 16;
-        int d1 = 4;
-        int d2 = 85;
+        int m2 = 19;
+        int d1 = 5;
+        int d2 = 95;
 
         double lengthOfLine1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
         double lengthOfLine2 = Math.sqrt((m2 - m1) * (m2 - m1) + (d2 - d1) * (d2 - d1));
@@ -20,10 +20,12 @@ public class LineComparison
         System.out.println(lengthOfLine1);
         System.out.println(lengthOfLine2);
 
-        if(lengthOfLine1 == lengthOfLine2)
-            System.out.println("Lines are equal");
+        if(lengthOfLine1>lengthOfLine2)
+            System.out.println("Length of Line1 is greater than Length of Line2");
+        else if(lengthOfLine1<lengthOfLine2)
+            System.out.println("Length of Line1 is lesser than Length of Line2");
         else
-            System.out.println("Lines are not equal");
+            System.out.println("Both lines are Equal");
         }
     }
 
